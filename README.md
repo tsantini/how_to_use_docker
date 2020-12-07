@@ -17,7 +17,7 @@ https://docs.docker.com/engine/install/linux-postinstall/
 ## Mount a local folder inside the docker with writing access
 `docker run -v /home/tsantini/my_folder:/mnt/myfolder -it ubuntu:latest`
 
-## Build a conteiner
+## Build a new conteiner
 `build -t name_of_the_conteiner folder_with_Docker_file`
 
 ## Example of Docker file

@@ -6,7 +6,7 @@ If using ubuntu and apt-get:
 
 `sudo apt install docker`
 
-For fedora or centos, change to yum or dnf, depending on which one you use.
+For Fedora or CentOS, change `apt` to `yum` or `dnf`, depending on which one you use.
 
 ## Post-installation setup
 https://docs.docker.com/engine/install/linux-postinstall/

@@ -12,10 +12,10 @@ For fedora or centos, change to yum or dnf, depending on which one you use.
 https://docs.docker.com/engine/install/linux-postinstall/
 
 ## Test in a clean version of ubuntu in the interactive mode
-docker run -it ubuntu:latest
+`docker run -it ubuntu:latest`
 
 ## Mount a local folder inside the docker with writing access
-docker run -v /home/tsantini/my_folder:/mnt/myfolder -it ubuntu:latest
+`docker run -v /home/tsantini/my_folder:/mnt/myfolder -it ubuntu:latest`
 
 ## Build a conteiner
 `build -t name_of_the_conteiner folder_with_Docker_file`

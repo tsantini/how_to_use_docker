@@ -48,7 +48,11 @@ This container has several MRI image processing packages.
 
 `docker run -v local_folder:mounting_folder -rm -it tsantini/image_processing`
 
-more information about this conteiner at https://hub.docker.com/r/tsantini/image_processing
+To test, you can run:
+
+`mrconvert --help`
+
+More information about this conteiner at https://hub.docker.com/r/tsantini/image_processing
 
 You can request access to the Dockerfile for this conteiner.
 

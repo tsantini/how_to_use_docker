@@ -46,7 +46,7 @@ RUN apt update && \
 
 This container has several MRI image processing packages.
 
-`docker run -v local_folder:mounting_folder -rm -it tsantini/image_processing`
+`docker run -v local_folder:mounting_folder --rm -it tsantini/image_processing`
 
 To test, you can run:
 

@@ -54,5 +54,7 @@ You can request access to the Dockerfile for this conteiner.
 
 ## Useful flags
 `-it` interactive mode: open the container as a terminal
+
 `-v host_location:docker_mount_location` mount a local folder into the docker, for example: `-v /home/tsantini/my_folder:/mnt/myfolder`
+
 `--rm` remove the content of the conteiner after exiting. It's usually the default.

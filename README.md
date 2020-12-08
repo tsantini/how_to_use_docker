@@ -62,3 +62,21 @@ You can request access to the Dockerfile for this conteiner.
 `-v host_location:docker_mount_location` mount a local folder into the docker, for example: `-v /home/tsantini/my_folder:/mnt/myfolder`
 
 `--rm` remove the content of the conteiner after exiting. It's usually the default.
+
+## Pushing container to Docker Hub
+
+1) Login to docker hub
+
+`docker login --username=your_user_name`
+
+2) check the image you want to push
+
+`docker images`
+
+3) tag this image
+
+`docker tag image_ID your_user_name/image_name:new_tag`
+
+4) push the container
+
+`docker push your_user_name/image_name`

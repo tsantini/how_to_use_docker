@@ -80,3 +80,13 @@ You can request access to the Dockerfile for this conteiner.
 4) push the container
 
 `docker push your_user_name/image_name`
+
+## Reflaging a container
+
+1) check the images
+
+`docker images`
+
+2) retag
+
+`docker tag images_ID your_user_name/image_name:new_tag`

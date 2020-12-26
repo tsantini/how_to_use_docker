@@ -90,3 +90,7 @@ You can request access to the Dockerfile for this conteiner.
 2) retag
 
 `docker tag images_ID your_user_name/image_name:new_tag`
+
+## removing flag
+
+`docker rmi image_name:flag`

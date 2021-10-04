@@ -63,6 +63,12 @@ You can request access to the Dockerfile for this conteiner.
 
 `--rm` remove the content of the conteiner after exiting. It's usually the default.
 
+## Running the container as host user
+
+Add the following argument to `docker run`:
+
+`-u $(id -u ${USER}):$(id -g ${USER})`
+
 ## Pushing container to Docker Hub
 
 1) Login to docker hub

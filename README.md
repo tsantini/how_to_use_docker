@@ -100,3 +100,10 @@ Add the following argument to `docker run`:
 ## removing flag
 
 `docker rmi image_name:flag`
+
+## saving and loading containers
+
+`docker save [OPTIONS] IMAGE [IMAGE...]` -> saves the conteiner in a tar file, for example `docker your_user_name/image_name > ~/conteiner.tar`
+
+`docker load [OPTIONS]` -> loads the conteiner from a tar file, for example `docker load < ~/conteiner.tar`
+

@@ -107,3 +107,8 @@ Add the following argument to `docker run`:
 
 `docker load [OPTIONS]` -> loads the conteiner from a tar file, for example `docker load < ~/conteiner.tar`
 
+## saving a docker conteiner as singularity format
+
+example:
+
+`singularity pull camino.sif docker://tsantini/camino:latest`

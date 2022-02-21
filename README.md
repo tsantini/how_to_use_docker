@@ -112,3 +112,8 @@ Add the following argument to `docker run`:
 example:
 
 `singularity pull camino.sif docker://tsantini/camino:latest`
+
+## checking the stats of the conteiners
+
+`docker ps` -> check the running conteiners
+`docker stats` -> shows the CPU/memory/IO usage of the conteiners

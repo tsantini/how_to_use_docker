@@ -118,3 +118,11 @@ example:
 `docker ps` -> check the running conteiners
 
 `docker stats` -> shows the CPU/memory/IO usage of the conteiners
+
+## commiting changes
+
+`docker ps` -> check the running conteiners
+
+`docker commit image_ID your_user_name/image_name:tag` -> commit the container
+
+`docker push your_user_name/image_name:tag` -> push to dockerhub

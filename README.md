@@ -42,6 +42,12 @@ RUN apt update && \
     libpthread-stubs0-dev \
     parallel
 ```
+## Mount a local folder inside the docker with writing access
+
+After building and testing your container, you might be interested in communicating your container with the host to share files. Please type the following:
+
+`docker run -v /home/tsantini/my_folder:/mnt/myfolder -it ubuntu:latest`
+
 ## Running the image_processing container (available at dockerhub)
 
 This container has several MRI image processing packages.

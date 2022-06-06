@@ -15,7 +15,7 @@ https://docs.docker.com/engine/install/linux-postinstall/
 `docker run -it ubuntu:latest`
 
 ## Mount a local folder inside the docker with writing access
-`docker run -v /home/tsantini/my_folder:/mnt/myfolder -it ubuntu:latest`
+`docker run -v /home/tsantini/my_folder_at_host:/mnt/myfolder -it name_of_container:latest`
 
 ## Build a new conteiner
 `docker build -t name_of_the_conteiner folder_with_Docker_file`
@@ -123,6 +123,6 @@ example:
 
 `docker ps` -> check the running conteiners
 
-`docker commit image_ID your_user_name/image_name:tag` -> commit the container
+`docker commit container_ID your_user_name/image_name:tag` -> commit the container
 
 `docker push your_user_name/image_name:tag` -> push to dockerhub

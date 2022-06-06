@@ -46,7 +46,7 @@ RUN apt update && \
 
 After building and testing your container, you might be interested in communicating your container with the host to share files. Please type the following:
 
-`docker run -v /home/tsantini/my_folder:/mnt/myfolder -it ubuntu:latest`
+`docker run -v /home/tsantini/my_folder:/mnt/myfolder -it container_name:latest`
 
 ## Running the image_processing container (available at dockerhub)
 

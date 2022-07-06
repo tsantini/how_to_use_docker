@@ -121,7 +121,7 @@ example:
 
 example how to run singularity sif container:
 
-`singularity exec -B $PWD:$PWD -W $PWD ./container.sif command`
+`singularity exec -B $PWD:$PWD -W $PWD ./container.sif commands_inside_container`
 
 ## checking the stats of the conteiners
 

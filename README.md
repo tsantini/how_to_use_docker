@@ -119,6 +119,10 @@ example:
 
 `singularity pull camino.sif docker://tsantini/camino:latest`
 
+example how to run singularity sif container:
+
+`singularity exec -B $PWD:$PWD -W $PWD ./container.sif command`
+
 ## checking the stats of the conteiners
 
 `docker ps` -> check the running conteiners

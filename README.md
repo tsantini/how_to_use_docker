@@ -136,3 +136,23 @@ example how to run singularity sif container:
 `docker commit container_ID your_user_name/image_name:tag` -> commit the container
 
 `docker push your_user_name/image_name:tag` -> push to dockerhub
+
+## How to use docker on windows with wsl without the docker app
+- enable anyone in docker group to run dockerd without password
+1) in the wsl2 terminal, type `sudo visudo`
+2) add this lines to the file: `%docker ALL=(ALL:ALL)  NOPASSWD: /usr/bin/dockerd`
+
+- write a script to check if the dockerd is already runing, if not, start it
+```
+#!/usr/bin/bash
+if ! docker info > /dev/null 2>&1; then
+  echo "This script uses docker, starting it now"
+  sudo dockerd > ~/dockerd.txt 2>dockerd_err.txt &
+fi
+```
+
+- add the script to your .bashrc, example: `/home/username/start_docker.sh`
+
+- go to your `.docker\config.json` and remove the line that starts with `credsStore`, you will be able to login in your dockerhub after that
+
+

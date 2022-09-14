@@ -147,7 +147,7 @@ example how to run singularity sif container:
 #!/usr/bin/bash
 if ! docker info > /dev/null 2>&1; then
   echo "This script uses docker, starting it now"
-  sudo dockerd > ~/dockerd.txt 2>dockerd_err.txt &
+  sudo dockerd > ~/dockerd.txt 2>~/dockerd_err.txt &
 fi
 ```
 

@@ -155,4 +155,9 @@ fi
 
 - go to your `.docker\config.json` and remove the line that starts with `credsStore`, you will be able to login in your dockerhub after that
 
+## Cleaning up
+Delete all containers using the following command:
+```docker rm -f $(docker ps -a -q)```
+Delete all volumes using the following command:
+```docker volume rm $(docker volume ls -q)```
 

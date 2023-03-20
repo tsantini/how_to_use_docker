@@ -165,3 +165,11 @@ Delete all volumes using the following command:
 
 ```docker volume rm $(docker volume ls -q)```
 
+Clean up unused stuff:
+
+```
+docker container prune -f
+docker image prune -f
+docker volume prune -f
+```
+

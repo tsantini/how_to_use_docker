@@ -157,6 +157,13 @@ fi
 
 ## Cleaning up
 
+Delete some images:
+
+```
+docker rmi id:tag
+docker image prune -f
+```
+
 Delete all containers using the following command:
 
 ```docker rm -f $(docker ps -a -q)```
